@@ -1,0 +1,80 @@
+/*background: url("https://avatars.mds.yandex.net/get-pdb/225396/650ad45b-b898-4279-a69e-a7f35ff56e56/s1200
+https://avatars.mds.yandex.net/get-pdb/225396/650ad45b-b898-4279-a69e-a7f35ff56e56/s1200
+") no-repeat center center
+background: url("https://images.wallpaperscraft.com/image/winter_snow_road_mountains_fog_119908_3840x2160.jpg") no-repeat center center;*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+section{
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+}
+.inner-bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    display: block;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+}
+.zoom{
+    background: url("https://avatars.mds.yandex.net/get-pdb/225396/650ad45b-b898-4279-a69e-a7f35ff56e56/s1200") no-repeat center center;
+   /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    display: block;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-size: cover;
+    animation: scale 40s linear infinite;
+
+}
+.zoom-footer{
+    background-image: url("https://images.wallpaperscraft.com/image/winter_snow_road_mountains_fog_119908_3840x2160.jpg");
+}
+@keyframes scale {
+    50% {
+        -webkit-transform:scale(1.2);
+        -moz-transform:scale(1.2);
+        -ms-transform:scale(1.2);
+        -o-transform:scale(1.2);
+        transform:scale(1.2);
+    }
+}
+.bg-greeting h1 {
+    position: absolute;
+    color: white;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.content-wrapper{
+    height: auto;
+    padding: 20px 50px;
+}
+.content-wrapper h1{
+    margin: 0;
+    padding: 20px 0;
+    font: 44px "Arial";
+}
+.content-wrapper p{
+    text-align: justify;
+    font-size: 18px;
+    color: #9F9F9F;
+    display: inline-block;
+    width: 20%;
+    padding: 20px;
+    vertical-align: top;
+
+}
+.bg-footer .inner-bg{
+    transform: skewY(6deg);
+}
